@@ -19,7 +19,7 @@ const ThirdPage = () => {
                     }
                 });
             },
-            { threshold: 0.3 } // Триггерим, когда 10% компонента видны
+            { threshold: 0.4 } // Триггерим, когда 10% компонента видны
         );
 
         if (sectionRef.current) {
