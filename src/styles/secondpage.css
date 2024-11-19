@@ -69,6 +69,10 @@
         height: auto; /* Убираем фиксированную высоту */
         padding: 1rem; /* Добавляем отступы */
     }
+
+    .secondpage div h2 {
+        font-size: 1.1rem;
+    }
 }
 
 /* Медиазапросы для очень маленьких экранов (мобильные телефоны) */
@@ -81,5 +85,9 @@
     .secondpage span{
         height: auto; /* Убираем фиксированную высоту */
         padding: 0.9rem; /* Добавляем отступы */
+    }
+
+    .secondpage div h2 {
+        font-size: 1rem;
     }
 }
