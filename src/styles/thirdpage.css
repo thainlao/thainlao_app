@@ -42,14 +42,8 @@
 }
 
 @media (max-width: 768px) {
-    .thirdpage {
-    }
-
     .thirdpage h4 {
         font-size: 1.8rem; /* Уменьшаем размер заголовка */
-    }
-
-    .thirdpage section {
     }
 
     .dollar-wrapper {

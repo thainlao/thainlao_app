@@ -1,35 +1,8 @@
-import { useState, useRef, useEffect } from 'react'; // Импортируем необходимые хуки
 import '../styles/howtobuy.css';
-import dog from '../assets/dogmeme.jpg';
-import {motion} from 'framer-motion';
+
 
 const HowBuy = () => {
-    const [isVisible, setIsVisible] = useState(false); // Состояние для отслеживания видимости компонента
-    const sectionRef = useRef(null); // Ссылка на секцию для отслеживания
 
-    // Используем Intersection Observer для отслеживания видимости
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setIsVisible(true); // Если элемент видим, начинаем анимацию
-                    }
-                });
-            },
-            { threshold: 0.5 } // Срабатывает, когда 20% компонента видны
-        );
-
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current); // Начинаем наблюдение
-        }
-
-        return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current); // Останавливаем наблюдение, когда компонент удаляется
-            }
-        };
-    }, []);
 
     return (
         <div className="howtobuy">
