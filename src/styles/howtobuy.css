@@ -1,0 +1,65 @@
+.howtobuy {
+    height: 50vh;
+    background-color: #F5CBA7;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.howtobuy img {
+    height: 300px;
+    width: 300px;
+    border: 15px solid #FF4500; /* Начальный цвет границы */
+    border-radius: 12px;
+    animation: pulse-border 4s infinite ease-in-out; /* Анимация пульсации границы */
+}
+
+.howtobuy section{
+    color: #6E4B3A;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.howtobuy span{
+    text-decoration: underline;
+    color: #a54441;
+}
+
+/* Ключевая анимация для пульсации границы */
+@keyframes pulse-border {
+    0% {
+        border-color: #FF4500; /* Начальный цвет */
+    }
+    50% {
+        border-color: #6d1d0f; /* Цвет на середине анимации */
+    }
+    100% {
+        border-color: #FF4500; /* Возвращаемся к начальному цвету */
+    }
+}
+
+@media (max-width: 768px) {
+    .howtobuy img {
+        height: 250px;
+        width: 250px;
+    }
+    
+    .howtobuy section{
+        font-size: 1.2rem;
+    }
+}
+
+/* Медиазапросы для очень маленьких экранов (мобильные телефоны) */
+@media (max-width: 480px) {
+    .howtobuy img {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .howtobuy section{
+        font-size: 1rem;
+    }
+}

@@ -12,7 +12,9 @@ const FirstPage = () => {
                 animate={{ opacity: 1, y: 0 }} // финальное состояние
                 transition={{ duration: 1, ease: 'easeOut' }}>
                 <h1>$D.O.G.I the coin</h1>
-                <h2>BYU DOGI TO IMPROVE YOU LIFE</h2>
+                <h2>
+                    <del>BYU</del> <span>BUY</span> DOGI TO IMPROVE YOUR LIFE
+                </h2>
 
                 <a className='buy'>BUY</a>
                 </motion.div>

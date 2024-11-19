@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import SecondPage from "./components/SecondPage"
 import AnimatedCursor from "react-animated-cursor"
 import ThirdPage from "./components/ThirdPage"
+import HowBuy from "./components/HowBuy"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Header />
       <FirstPage />
       <SecondPage />
+      <HowBuy />
       <ThirdPage />
 
       <nav>
