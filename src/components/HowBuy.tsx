@@ -33,7 +33,7 @@ const HowBuy = () => {
 
     return (
         <div className="howtobuy">
-            <motion.img
+            {/* <motion.img
                 src={dog}
                 alt="dog"
                 ref={sectionRef} // Привязываем секцию к ref
@@ -43,10 +43,10 @@ const HowBuy = () => {
                     opacity: isVisible ? 1 : 0, // Плавное появление
                     transition: { duration: 1 }, // Длительность анимации
                 }}
-            />
+            /> */}
 
             <section>
-                <motion.h2
+                {/* <motion.h2
                     initial={{ x: 200, opacity: 0 }} // Начальная позиция справа и невидимость
                     animate={{
                         x: isVisible ? 0 : 200, // Перемещение в исходную позицию
@@ -68,7 +68,7 @@ const HowBuy = () => {
                     <p>total volume: <span>220 ETH</span></p>
                     <p>BUY/SELL TAX: <span>0%</span></p>
                     <span>8% Cex Listings / 92% Community</span>
-                </motion.div>
+                </motion.div> */}
             </section>
         </div>
     );

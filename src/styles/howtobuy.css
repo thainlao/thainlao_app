@@ -1,6 +1,6 @@
 .howtobuy {
     height: 50vh;
-    background-color: #F5CBA7;
+
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
@@ -18,14 +18,14 @@
 }
 
 .howtobuy section{
-    color: #6E4B3A;
+    color: black;
     font-size: 2.1rem;
     font-weight: 600;
 }
 
 .howtobuy span{
     text-decoration: underline;
-    color: #a54441;
+    color: black;
 }
 
 /* Ключевая анимация для пульсации границы */

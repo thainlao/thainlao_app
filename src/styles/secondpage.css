@@ -1,5 +1,4 @@
 .secondpage {
-    background-color: #F5CBA7;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -7,87 +6,40 @@
     gap: 2rem;
 }
 
-.secondpage h1{
-    color: #6E4B3A;
-    font-size: 2rem;
-    text-align: center;
-    max-width: 70%;
+.wallet{
+    border: 2px solid black;
+    width: min-content;
     margin: 0 auto;
-}
-
-.secondpage span{
-    color: #a54441;
-    font-size: 2.5rem;
-    text-decoration: underline;
-}
-
-.secondpage div {
+    padding: 6px;
+    border-radius: 12px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 5px;
+    font-size: 2rem;
 }
 
-.secondpage div button {
-    width: 120px;
-    padding: 10px 20px;
-    background-color: #FF4500; /* Зеленый фон */
-    color: white; /* Белый текст */
+.wallet button{
     border: none;
-    border-radius: 5px; /* Слегка округленные углы */
-    font-size: 16px;
-    font-weight: bold;
+    background-color: transparent;
     cursor: pointer;
-    transition: all 0.3s ease-in-out; /* Плавный переход для всех изменений */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень */
 }
 
-.secondpage div button:hover {
-    background-color: #d34410; /* Немного темнее при наведении */
-    transform: translateY(-3px); /* Легкий подъем кнопки */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Усиленная тень при наведении */
+.wallet span{
+    color: black;
+    font-size: 2rem;
 }
 
-.secondpage div button:active {
-    background-color: #d84611; /* Еще темнее при нажатии */
-    transform: translateY(1px); /* Немного опускается при нажатии */
+.wallet img {
+    height: 30px;
+    width: 30px;
 }
 
-
-.secondpage div h2{
-    color: #a54441;
-    font-size: 2.5rem;
-    text-decoration: underline;
-}
 
 @media (max-width: 768px) {
-    .secondpage h1 {
-        height: auto; /* Убираем фиксированную высоту */
-        padding: 1rem; /* Добавляем отступы */
-    }
 
-    .secondpage span{
-        height: auto; /* Убираем фиксированную высоту */
-        padding: 1rem; /* Добавляем отступы */
-    }
-
-    .secondpage div h2 {
-        font-size: 1.1rem;
-    }
 }
 
 /* Медиазапросы для очень маленьких экранов (мобильные телефоны) */
 @media (max-width: 480px) {
-    .secondpage h1 {
-        height: auto; /* Убираем фиксированную высоту */
-        padding: 0.9rem; /* Добавляем отступы */
-    }
 
-    .secondpage span{
-        height: auto; /* Убираем фиксированную высоту */
-        padding: 0.9rem; /* Добавляем отступы */
-    }
-
-    .secondpage div h2 {
-        font-size: 1rem;
-    }
 }

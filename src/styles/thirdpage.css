@@ -3,12 +3,11 @@
     justify-content: center;
     align-items: center;
     height: 60vh;
-    background-color: #F5CBA7;
     flex-direction: column;
 }
 
 .thirdpage h4{
-    color: #a54441;
+    color: black;
     font-size: 2.5rem;
 }
 
@@ -29,7 +28,7 @@
 
 .dollar {
     font-weight: bold;
-    color: #FF6347;
+    color: black;
     font-size: 3rem;
 }
 
@@ -38,7 +37,7 @@
     bottom: 40px;
     left: 50%;
     width: 4px;
-    background-color: #FF6347; /* Цвет палки */
+    background-color: black; /* Цвет палки */
     transform: translateX(-50%);
 }
 
