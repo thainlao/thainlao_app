@@ -7,8 +7,8 @@
   font-family: "Baloo 2", sans-serif;
 }
 
-body, html{
-  overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 /* Стили для полосы прокрутки */
@@ -51,15 +51,3 @@ body, html{
   background-color: red;
   color: white;
 }
-
-nav{
-  background-color: black;
-  display: flex;
-  justify-content: center;
-}
-
-nav h2{
-  color: red;
-  font-size: 1rem;
-}
-

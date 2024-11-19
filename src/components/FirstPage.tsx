@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const FirstPage = () => {
     return (
-        <div className='firstpage'>
+        <div id='about' className='firstpage'>
             <section>
                 <motion.div
                 className='text_section'

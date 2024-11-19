@@ -1,12 +1,17 @@
 .howtobuy {
-    height: 50vh;
-
+    height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2.5rem;
     align-items: center;
     justify-content: center;
     position: relative;
+
+}
+
+.howtobuy h1{
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 .howtobuy img {

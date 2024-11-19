@@ -7,10 +7,10 @@ const Header = () => {
             <img src={dog} alt='dot' />
 
             <div>
-                <a href="#">ABOUT</a>
-                <a href="#">BUY</a>
-                <a href='#'>MEME NEWS</a>
-                <a href='#'>LINKS</a>
+                <a href="#about">ABOUT</a>
+                <a href="#buy">BUY</a>
+                <a href="#meme-news">MEME NEWS</a>
+                <a href="#links">LINKS</a>
             </div>
         </header>
     )

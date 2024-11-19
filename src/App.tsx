@@ -1,10 +1,9 @@
 
 import FirstPage from "./components/FirstPage"
 import Header from "./components/Header"
+import LinksComponent from "./components/LinksComponent"
+import MemeNews from "./components/MemeNews"
 import SecondPage from "./components/SecondPage"
-import ThirdPage from "./components/ThirdPage"
-import HowBuy from "./components/HowBuy"
-
 function App() {
 
   return (
@@ -12,12 +11,8 @@ function App() {
       <Header />
       <FirstPage />
       <SecondPage />
-      <HowBuy />
-      <ThirdPage />
-
-      <nav>
-        <h2>$DOGI is a meme token with no intrinsic value or expectation of financial return. The token is for entertainment purposes only.</h2>
-      </nav>
+      <MemeNews />
+      <LinksComponent />
     </div>
   )
 }
