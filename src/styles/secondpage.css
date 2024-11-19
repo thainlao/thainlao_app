@@ -1,0 +1,42 @@
+.secondpage {
+    background-color: #F5CBA7;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+}
+
+.secondpage h1{
+    color: #6E4B3A;
+    font-size: 2rem;
+}
+
+.secondpage span{
+    color: #a54441;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .secondpage h1 {
+        height: auto; /* Убираем фиксированную высоту */
+        padding: 1rem; /* Добавляем отступы */
+    }
+
+    .secondpage span{
+        height: auto; /* Убираем фиксированную высоту */
+        padding: 1rem; /* Добавляем отступы */
+    }
+}
+
+/* Медиазапросы для очень маленьких экранов (мобильные телефоны) */
+@media (max-width: 480px) {
+    .secondpage h1 {
+        height: auto; /* Убираем фиксированную высоту */
+        padding: 0.9rem; /* Добавляем отступы */
+    }
+
+    .secondpage span{
+        height: auto; /* Убираем фиксированную высоту */
+        padding: 0.9rem; /* Добавляем отступы */
+    }
+}

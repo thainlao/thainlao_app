@@ -1,0 +1,83 @@
+.thirdpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: #F5CBA7;
+    flex-direction: column;
+}
+
+.thirdpage h4{
+    color: #a54441;
+    font-size: 2.5rem;
+}
+
+.thirdpage section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+}
+
+.dollar-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.dollar {
+    font-weight: bold;
+    color: #FF6347;
+    font-size: 3rem;
+}
+
+.bar {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 4px;
+    background-color: #FF6347; /* Цвет палки */
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .thirdpage {
+    }
+
+    .thirdpage h4 {
+        font-size: 1.8rem; /* Уменьшаем размер заголовка */
+    }
+
+    .thirdpage section {
+    }
+
+    .dollar-wrapper {
+        margin-bottom: 5px; /* Уменьшаем отступы */
+    }
+
+    .dollar {
+        font-size: 2rem; /* Уменьшаем размер доллара */
+    }
+
+    .bar {
+        bottom: 20px; /* Уменьшаем расстояние от нижней части */
+        width: 2px; /* Уменьшаем ширину палки */
+    }
+}
+
+/* Медиазапросы для маленьких мобильных экранов */
+@media (max-width: 480px) {
+    .thirdpage h4 {
+        font-size: 1.5rem; /* Еще больше уменьшаем заголовок */
+    }
+
+    .dollar {
+        font-size: 1.5rem; /* Уменьшаем размер доллара для маленьких экранов */
+    }
+
+    .bar {
+        width: 1px; /* Еще уменьшаем толщину палки */
+    }
+}

@@ -1,5 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Baloo 2", sans-serif;
 }
+
+body, html{
+  overflow-x: hidden;
+}
+
+/* Стили для полосы прокрутки */
+::-webkit-scrollbar {
+  width: 12px; /* Ширина вертикальной полосы прокрутки */
+  height: 12px; /* Высота горизонтальной полосы прокрутки */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Цвет фона области прокрутки */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF6347; /* Цвет thumb (ползунка) */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1; /* Граница вокруг ползунка */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4500; /* Цвет при наведении */
+}
+
+/* Для горизонтальной прокрутки */
+::-webkit-scrollbar-horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #FF6347; /* Цвет thumb на горизонтальной полосе */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: #FF4500; /* Цвет при наведении на горизонтальную прокрутку */
+}
+
+::selection{
+  background-color: red;
+  color: white;
+}
+
+nav{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+nav h2{
+  color: red;
+  font-size: 1rem;
+}
+

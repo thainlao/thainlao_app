@@ -1,0 +1,197 @@
+.firstpage {
+    height: 90vh;
+    background-color: #F5CBA7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.firstpage img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.firstpage section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+header{
+    padding: 2rem;
+    background-color: #F5CBA7;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header a{
+    color: #6E4B3A;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: rotate 15s linear infinite; /* анимация вращения */
+}
+
+/* Создаем анимацию вращения */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Начальное положение */
+    }
+    100% {
+        transform: rotate(360deg); /* Конечное положение (360 градусов) */
+    }
+}
+
+.text_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.text_section h1{
+    color: #6E4B3A;
+    font-size: 3rem;
+}
+
+.text_section h2{
+    color: #ff285e;
+    font-size: 2.5rem;
+}
+
+.buy {
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    background-color: #FF6347;
+    color: white;
+    border: 5px solid #FF6347;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+    animation: pulse 2s infinite ease-in-out;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.buy {
+    background-color: #FF4500;
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.7);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .firstpage {
+        height: auto; /* Убираем фиксированную высоту */
+        padding: 2rem; /* Добавляем отступы */
+    }
+
+    .firstpage img {
+        height: 300px; /* Уменьшаем размер изображения */
+        width: 300px;
+    }
+
+    .firstpage section {
+        flex-direction: column; /* Ставим элементы в колонку для мобильных */
+        align-items: center;
+        gap: 1rem; /* Уменьшаем промежуток между элементами */
+    }
+
+    header {
+        padding: 1rem; /* Уменьшаем отступы */
+    }
+
+    header a {
+        font-size: 2rem; /* Уменьшаем размер шрифта */
+    }
+
+    header img {
+        height: 80px; /* Уменьшаем размер изображения */
+        width: 80px;
+    }
+
+    .text_section h1 {
+        font-size: 2rem; /* Уменьшаем размер заголовка */
+    }
+
+    .text_section h2 {
+        font-size: 2rem; /* Уменьшаем размер второго заголовка */
+    }
+
+    .buy {
+        font-size: 1.2rem; /* Уменьшаем размер шрифта кнопки */
+        padding: 8px 12px; /* Уменьшаем padding */
+        margin-top: 1rem; /* Уменьшаем отступ сверху */
+    }
+}
+
+/* Медиазапросы для очень маленьких экранов (мобильные телефоны) */
+@media (max-width: 480px) {
+    .firstpage {
+        padding: 1.5rem; /* Меньше отступов на маленьких экранах */
+    }
+
+    .firstpage img {
+        height: 250px; /* Еще больше уменьшаем изображение */
+        width: 250px;
+    }
+
+    .firstpage section {
+        gap: 0.5rem; /* Уменьшаем промежутки между элементами */
+    }
+
+    header {
+        padding: 0.5rem; /* Уменьшаем padding в хедере */
+    }
+
+    header a {
+        font-size: 1.8rem; /* Еще меньше шрифт для ссылок */
+    }
+
+    header img {
+        height: 70px; /* Уменьшаем размер изображения */
+        width: 70px;
+    }
+
+    .text_section h1 {
+        font-size: 1.8rem; /* Уменьшаем заголовок */
+    }
+
+    .text_section h2 {
+        font-size: 1.8rem; /* Уменьшаем второй заголовок */
+    }
+
+    .buy {
+        font-size: 1rem; /* Еще меньше шрифт на самых маленьких экранах */
+        padding: 6px 10px; /* Меньше padding */
+    }
+}
