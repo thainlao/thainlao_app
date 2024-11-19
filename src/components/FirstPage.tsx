@@ -1,5 +1,4 @@
 import '../styles/firstpage.css';
-import dog from '../assets/dog.jpg';
 import { motion } from 'framer-motion';
 
 const FirstPage = () => {
